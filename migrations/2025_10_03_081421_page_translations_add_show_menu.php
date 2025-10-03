@@ -13,8 +13,8 @@ class PageTranslationsAddShowMenu extends Migration
      */
     public function up()
     {
-        Schema::table(config('pagebuilder.storage.database.prefix') . 'page_translations', function (Blueprint $table) {
-            $table->boolean('show_menu')->default(1)->after('route');
+        Schema::table(config('pagebuilder.storage.database.prefix') . 'pages', function (Blueprint $table) {
+            $table->boolean('show_menu')->default(1)->after('name');
         });
     }
 
