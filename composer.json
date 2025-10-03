@@ -14,7 +14,7 @@
     ],
     "require": {
         "php": ">=7.0",
-        "droxnl/phpagebuilder": "0.1.*"
+        "droxnl/phpagebuilder": "latest"
     },
     "autoload": {
         "psr-4": {
