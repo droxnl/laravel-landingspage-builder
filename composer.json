@@ -1,0 +1,36 @@
+{
+    "name": "droxnl/laravel-landingbuilder",
+    "description": "Exportable page builder in Laravel focussed on landing-pages.",
+    "keywords": [
+        "laravel",
+        "landingbuilder"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Drox",
+            "email": "info@drox.nl.nl"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "droxnl/phpagebuilder": "0.1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "droxnl\\LaravelPageBuilder\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "droxnl\\LaravelPageBuilder\\ServiceProvider"
+            ],
+            "aliases": {
+                "PageBuilder": "droxnl\\LaravelPageBuilder\\Facade"
+            }
+        }
+    }
+}
