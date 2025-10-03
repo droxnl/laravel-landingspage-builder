@@ -39,7 +39,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
                     PublishDemo::class,
                 ]);
             } elseif (empty(config('pagebuilder'))) {
-                throw new Exception("No PHPageBuilder config found, please run: php artisan vendor:publish --provider=\"HansSchouten\LaravelPageBuilder\ServiceProvider\" --tag=config");
+                throw new Exception("No PHPageBuilder config found, please run: php artisan vendor:publish --provider=\"droxnl\LaravelPageBuilder\ServiceProvider\" --tag=config");
             }
 
             // register singleton phpPageBuilder (this ensures phpb_ helpers have the right config without first manually creating a PHPageBuilder instance)
